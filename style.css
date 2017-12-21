@@ -1,0 +1,82 @@
+@font-face{
+    font-family: blowbrush;
+    src: url("./blowbrush.ttf");
+}
+
+@font-face{
+	font-family: raleway;
+	src: url("./raleway.ttf");
+}
+
+.background{
+	-ms-filter: contrast(118%) blur(2px) sepia(27%) saturate(141%);
+	-webkit-filter: contrast(118%) blur(2px) sepia(27%) saturate(141%);
+    background: url("./background.jpg");
+    background-position: 50% 80%;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    filter: contrast(118%) blur(2px) sepia(31%) saturate(101%);
+    width: 100%;
+    margin: 0;
+    z-index: -999;
+}
+
+div {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#social p {
+	border-bottom: 1px solid white;
+	color: white;
+	font-family: raleway;
+	font-size: 1em;
+	margin: 0 auto 15px auto;
+	width: 300px;
+}
+
+i.fa{
+	color: rgba(255, 255, 255, 1);
+	filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.4));
+	margin: 0 5px;
+}
+
+
+#message {
+    color: rgba(241, 137, 33, 1);
+    font-family: blowbrush;
+    font-size: 4em;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 1px 1px 15px rgba(255,255,255,0.2);
+}
+
+#logo {
+    -ms-filter: drop-shadow(1px 1px 15px rgba(255, 255, 255, 0.2));
+    -webkit-filter: drop-shadow(1px 1px 15px rgba(255, 255, 255, 0.2));
+    filter: drop-shadow(1px 1px 15px rgba(255, 255, 255, 0.2));
+    height: auto;
+    margin-top: 70px;
+    max-width: 600px;
+    width: 80%;
+}
+
+@media (max-width: 480px){
+    #logo {
+		-ms-filter: drop-shadow(1px 1px 6px rgba(255, 255, 255, 0.1));
+		-webkit-filter: drop-shadow(1px 1px 6px rgba(255, 255, 255, 0.1));
+		filter: drop-shadow(1px 1px 6px rgba(255, 255, 255, 0.1));
+        margin-top: 20px;
+        min-width: 170px;
+        width: 40%;
+    }
+    
+    #message {
+        color: rgba(0, 90, 145, 1);
+        font-size: 3.6em;
+    }
+}
